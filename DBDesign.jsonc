@@ -1,0 +1,17 @@
+// Mongo DB Design :-
+//Collections :-
+
+{
+  "data_files": [
+    {
+      "id": "id",
+      "data_file": "Uploaded_File",
+      "device": "Switch-type",
+      "trained_model_file": "trained_model_file ",
+      "created_at": "date-time",
+      "last_modified": "date-time",
+      "last-trained": "date-time"
+    }
+  ],
+  "Switch-type": [{ "name": "switch-name", "id": "id" }]
+}

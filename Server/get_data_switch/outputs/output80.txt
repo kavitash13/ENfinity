@@ -1,0 +1,592 @@
+2022-07-18T16:24:25: %EASYPY-INFO: Starting job run: sample2
+2022-07-18T16:24:25: %EASYPY-INFO: Runinfo directory: /ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/runinfo/sample2.2022Jul18_16:24:24.500791
+2022-07-18T16:24:25: %EASYPY-INFO: --------------------------------------------------------------------------------
+2022-07-18T16:24:28: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:28: %EASYPY-INFO: |                              Clean Information                               |
+2022-07-18T16:24:28: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:28: %EASYPY-INFO: {'bringup': {}, 'cleaners': {}, 'devices': {}}
+
+2022-07-18T16:24:28: %ATS-INFO: Checking all devices are up and ready is disabled, '--check-all-devices-up' must be set to True in case of pyats runs or '-check_all_devices_up' set to True in case of legacy easypy runs
+2022-07-18T16:24:28: %EASYPY-INFO: Starting task execution: Task-1
+2022-07-18T16:24:28: %EASYPY-INFO:     test harness = pyats.aetest
+2022-07-18T16:24:28: %EASYPY-INFO:     testscript   = /users/gurpres5/sample2.py
+2022-07-18T16:24:28: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:28: %AETEST-INFO: |                            Starting common setup                             |
+2022-07-18T16:24:28: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:28: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:28: %AETEST-INFO: |                         Starting subsection connect                          |
+2022-07-18T16:24:28: %AETEST-INFO: +------------------------------------------------------------------------------+
+
+2022-07-18 16:24:28,690: %UNICON-INFO: +++ Metaluna logfile /ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/runinfo/sample2.2022Jul18_16:24:24.500791/Metaluna-cli-1658141668.log +++
+
+2022-07-18 16:24:28,690: %UNICON-INFO: +++ Unicon plugin iosxe +++
+2022-07-18T16:24:28: %WARNINGS-WARNING: [33m/ws/srmk-bgl/pyats/pyats_20_5/lib/python3.8/site-packages/unicon/bases/routers/connection.py:97:[0m[39m
+2022-07-18T16:24:28: %WARNINGS-WARNING: [33mDeprecationWarning: Arguments 'username', 'enable_password','tacacs_password' and 'line_password' are now deprecated and replaced by 'credentials'.[0m[39m
+2022-07-18T16:24:28: %WARNINGS-WARNING: [33m  warnings.warn(message = "Arguments 'username', "[0m[39m
+Trying 10.106.19.196...
+
+
+2022-07-18 16:24:28,706: %UNICON-INFO: +++ connection to spawn: telnet 10.106.19.196 2004, id: 140042747097040 +++
+
+2022-07-18 16:24:28,706: %UNICON-INFO: connection to Metaluna
+Connected to 10.106.19.196.
+Escape character is '^]'.
+
+Switch#
+
+2022-07-18 16:24:29,535: %UNICON-WARNING: Invalid hostname detected: found Switch, expected Metaluna
+
+2022-07-18 16:24:29,536: %UNICON-INFO: +++ initializing handle +++
+
+2022-07-18 16:24:29,601: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'term length 0' +++
+term length 0
+Switch#
+
+2022-07-18 16:24:29,832: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'term width 0' +++
+term width 0
+Switch#
+
+2022-07-18 16:24:30,061: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 2022-07-18_08.29_kavelmur
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_IOSXE), Experimental Version 17.10.20220714:183343 [BLD_POLARIS_DEV_S2C_20220701_023637-4-g92ae75815d4e-dirty:/nobackup/kavelmur/histogram 104]
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Fri 15-Jul-22 00:03 by kavelmur
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2022 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.7.1DEV, DEVELOPMENT SOFTWARE
+Switch uptime is 7 hours, 34 minutes
+Uptime for this control processor is 7 hours, 38 minutes
+System returned to ROM by reload command issued
+System image file is "tftp://202.153.144.25//auto/tftp-blr-users4/kavelmur/new_eye.bin"
+Last reload reason: reload command issued
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+None                	Subscription Smart License    	 None                          
+AIR License Level: AIR DNA Advantage
+Next reload AIR license Level: AIR DNA Advantage
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9606R (X86) processor (revision V00) with 6030377K/6147K bytes of memory.
+Processor board ID FXS2241Q04W
+2 Virtual Ethernet interface
+60 Forty/Hundred Gigabit Ethernet interfaces
+80 Ten/TwentyFive/Fifty Gigabit Ethernet interfaces
+4 Forty/Hundred/TwoHundred Gigabit Ethernet interfaces
+8 Forty/Hundred/FourHundred Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+33554432K bytes of physical memory.
+11161600K bytes of Bootflash at bootflash:.
+1638400K bytes of Crash Files at crashinfo:.
+234430023K bytes of SATA hard disk at disk0:.
+
+Base Ethernet MAC Address          : 6c:b2:ae:4a:4f:c0
+Motherboard Assembly Number        : 4DB9
+Motherboard Serial Number          : FXS223805XS
+Model Revision Number              : V02
+Motherboard Revision Number        : 6
+Model Number                       : C9606R
+System Serial Number               : FXS2241Q04W
+
+Switch#
+
+2022-07-18 16:24:34,077: %UNICON-INFO: +++ Metaluna with via 'a': configure +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#no logging console
+Switch(config)#line console 0
+Switch(config-line)#exec-timeout 0
+Switch(config-line)#end
+Switch#
+2022-07-18T16:24:34: %AETEST-INFO: The result of subsection connect is => PASSED
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:34: %AETEST-INFO: |                      Starting subsection verify_inputs                       |
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+parse and verify inputs from yaml
+2022-07-18T16:24:34: %AETEST-INFO: The result of subsection verify_inputs is => PASSED
+2022-07-18T16:24:34: %AETEST-INFO: The result of common setup is => PASSED
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:34: %AETEST-INFO: |                            Starting testcase TC1                             |
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:34: %AETEST-INFO: |                          Starting section tc1_setup                          |
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+Setting up things required for this TC
+
+2022-07-18 16:24:34,761: %UNICON-INFO: Metaluna is already connected
+2022-07-18T16:24:34: %AETEST-INFO: The result of section tc1_setup is => PASSED
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:34: %AETEST-INFO: |                          Starting section tc1_step1                          |
+2022-07-18T16:24:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+unique.................................................................................unique
+
+2022-07-18 16:24:34,894: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show interfaces Fif1/0/17' +++
+show interfaces Fif1/0/17
+FiftyGigE1/0/17 is up, line protocol is up (connected) 
+  Hardware is Fifty Gigabit Ethernet, address is 6c03.090e.db10 (bia 6c03.090e.db10)
+  MTU 1500 bytes, BW 10000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive not set
+  Full-duplex, 10Gb/s, link type is auto, media type is SFP-10GBase-CU3M
+  input flow-control is off, output flow-control is unsupported 
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:01, output 00:00:09, output hang never
+  Last clearing of "show interface" counters 07:34:25
+  Input queue: 0/2000/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     17717 packets input, 1346270 bytes, 0 no buffer
+     Received 0 broadcasts (0 multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 0 multicast, 0 pause input
+     0 input packets with dribble condition detected
+     905 packets output, 57920 bytes, 0 underruns
+     Output 0 broadcasts (0 multicasts)
+     0 output errors, 0 collisions, 2 interface resets
+     513 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+Switch#
+
+2022-07-18 16:24:36,674: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show platform hardware iomd 2/0 ethernet_controllers phy 2 link-status' +++
+show platform hardware iomd 2/0 ethernet_controllers phy 2 link-status
+****** Port = 2, Phy_port = 0, Ctrl = 0 *******
+
+Executing Command - [interface] 
+
+Executing Command - [link status] 
+PHY:0
+ hMdio:1 hLane:1 hCurr:0 hLatch:0 hSigDetect:0 hDspLock:0 h_OpMode:60
+ lMdio:1 lLane:1 lCurr:0 lLatch:0 lSigDetect:1 lDspLock:0 l_OpMode:60
+ (rc:0)
+ line-side AN status: complete 0 speed_bits 0 (rc:0)
+
+Executing Command - [interface link status] 
+
+Executing Command - [channel link status] 
+
+Executing Command - [kran status hrx 0] 
+Port optics info : 
+Optics Type: SFP 50GE CU3M
+Vendor Name: CISCO-LUXSHARE  
+PID : SFP-50G-CU3M        ^A
+
+Optics DOM :
+Lanes : 1
+voltage: 34789.000000
+temperature: -120.000000
+
+
+            |   Rx LOS  |   Tx LOS  |   Rx Power    |   Tx Power    |   Tx Laser Status |   Tx Bias Current |
+            |           |           |               |               |                   |                   |
+ -----------+-----------+-----------+---------------+---------------+-------------------+-------------------+
+    Lane 1  |         0 |         0 |    -12.628074 |    -40.000000 |                 0 |         65.000000 |
+Executing Command - [Auxiliary PHY link status] 
+
+Executing Command - [Auxiliary PHY snr] 
+
+Executing Command - [Auxiliary PHY counters] 
+
+
+Switch#
+
+2022-07-18 16:24:38,313: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show platform hardware iomd 2/0 ethernet_controllers phy 2 pcs-status' +++
+show platform hardware iomd 2/0 ethernet_controllers phy 2 pcs-status
+****** Port = 2, Phy_port = 0, Ctrl = 0 *******
+
+Executing Command - [fec stat] 
+  Port	Mode		mdio	lane 	DIR	Speed	FEC		AN
+   2	MZD_P50UP	1	1	LINE	50G	RS-FEC/RS544	OFF
+
+Executing Command - [pcs] 
+PHY:0
+ hMdio:1 hLane:1 hCurrTxFault:1 hCurrRxFault:0 hLatchTxFault:1 hLatchRxFault:0
+ lMdio:1 lLane:1 lCurrTxFault:0 lCurrRxFault:0 lLatchTxFault:0 lLatchRxFault:1
+ (rc:0)
+Executing Command - [Auxiliary PHY fec stat] 
+
+Executing Command - [Auxiliary PHY pcs] 
+
+
+Switch#
+
+2022-07-18 16:24:39,118: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show platform hardware iomd 2/0 ethernet_controllers phy 2 diagnostic-registers | i CAP' +++
+show platform hardware iomd 2/0 ethernet_controllers phy 2 diagnostic-registers | i CAP
+CTLE C112GX4_CTLE_CAP1_SEL: 0x1F
+CTLE C112GX4_CTLE_CAP2_SEL: 0xF
+CTLE C112GX4_CTLE_CAP1_SEL: 0x4
+CTLE C112GX4_CTLE_CAP2_SEL: 0x5
+Switch#
+
+2022-07-18 16:24:40,490: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show platform hardware fed active npu slot 2 port 2 dsc_dump | i RX_FW_LOCK' +++
+show platform hardware fed active npu slot 2 port 2 dsc_dump | i RX_FW_LOCK
+            "RX_FW_LOCK": 1
+Switch#
+
+2022-07-18 16:24:43,376: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show platform hardware fed active npu slot 2 port 2 dsc_dump | i TX_FW_LOCK' +++
+show platform hardware fed active npu slot 2 port 2 dsc_dump | i TX_FW_LOCK
+            "TX_FW_LOCK": 1,
+Switch#
+
+2022-07-18 16:24:46,260: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show platform hardware fed active npu slot 2 port 2 dsc_dump | i RX_SIG_DET' +++
+show platform hardware fed active npu slot 2 port 2 dsc_dump | i RX_SIG_DET
+            "RX_SIG_DET": 1,
+Switch#
+unique.................................................................................unique
+2022-07-18T16:24:49: %AETEST-INFO: The result of section tc1_step1 is => PASSED
+2022-07-18T16:24:49: %AETEST-INFO: The result of testcase TC1 is => PASSED
+2022-07-18T16:24:49: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:49: %AETEST-INFO: |                           Starting common cleanup                            |
+2022-07-18T16:24:49: %AETEST-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:49: %AETEST-INFO: The result of common cleanup is => PASSED
+2022-07-18T16:24:49: %CISCO-INFO: Start Telemetry - Task
+2022-07-18T16:24:49: %EASYPY-INFO: TIMS result uploading is not enabled
+2022-07-18T16:24:50: %CISCO-INFO: Start Telemetry - Test
+2022-07-18T16:24:51: %CISCO-INFO: Posted data to Kafka returning status code 200 within time 0:00:01.020474
+2022-07-18T16:24:51: %GENIE-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:51: %GENIE-INFO: |                    Starting Device Image MD5 Hash Plugin                     |
+2022-07-18T16:24:51: %GENIE-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:24:51: %LOG-INFO: >>>> Begin child log /ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/runinfo/sample2.2022Jul18_16:24:24.500791/JobLog.sample2:pid-710888
+
+2022-07-18 16:24:51,911: %UNICON-INFO: +++ Metaluna logfile /ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/runinfo/sample2.2022Jul18_16:24:24.500791/Metaluna-cli-1658141691.log +++
+
+2022-07-18 16:24:51,911: %UNICON-INFO: +++ Unicon plugin iosxe +++
+2022-07-18T16:24:51: %WARNINGS-WARNING: [33m/ws/srmk-bgl/pyats/pyats_20_5/lib/python3.8/site-packages/unicon/bases/routers/connection.py:97:[0m[39m
+2022-07-18T16:24:51: %WARNINGS-WARNING: [33mDeprecationWarning: Arguments 'username', 'enable_password','tacacs_password' and 'line_password' are now deprecated and replaced by 'credentials'.[0m[39m
+2022-07-18T16:24:51: %WARNINGS-WARNING: [33m  warnings.warn(message = "Arguments 'username', "[0m[39m
+Trying 10.106.19.196...
+
+
+2022-07-18 16:24:51,927: %UNICON-INFO: +++ connection to spawn: telnet 10.106.19.196 2004, id: 140042747791152 +++
+
+2022-07-18 16:24:51,927: %UNICON-INFO: connection to Metaluna
+Connected to 10.106.19.196.
+Escape character is '^]'.
+
+Switch#
+
+2022-07-18 16:24:52,760: %UNICON-WARNING: Invalid hostname detected: found Switch, expected Metaluna
+
+2022-07-18 16:24:52,760: %UNICON-INFO: +++ initializing handle +++
+
+2022-07-18 16:24:52,823: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'term length 0' +++
+term length 0
+Switch#
+
+2022-07-18 16:24:53,054: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'term width 0' +++
+term width 0
+Switch#
+
+2022-07-18 16:24:53,283: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 2022-07-18_08.29_kavelmur
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_IOSXE), Experimental Version 17.10.20220714:183343 [BLD_POLARIS_DEV_S2C_20220701_023637-4-g92ae75815d4e-dirty:/nobackup/kavelmur/histogram 104]
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Fri 15-Jul-22 00:03 by kavelmur
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2022 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.7.1DEV, DEVELOPMENT SOFTWARE
+Switch uptime is 7 hours, 35 minutes
+Uptime for this control processor is 7 hours, 38 minutes
+System returned to ROM by reload command issued
+System image file is "tftp://202.153.144.25//auto/tftp-blr-users4/kavelmur/new_eye.bin"
+Last reload reason: reload command issued
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+None                	Subscription Smart License    	 None                          
+AIR License Level: AIR DNA Advantage
+Next reload AIR license Level: AIR DNA Advantage
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9606R (X86) processor (revision V00) with 6030377K/6147K bytes of memory.
+Processor board ID FXS2241Q04W
+2 Virtual Ethernet interface
+60 Forty/Hundred Gigabit Ethernet interfaces
+80 Ten/TwentyFive/Fifty Gigabit Ethernet interfaces
+4 Forty/Hundred/TwoHundred Gigabit Ethernet interfaces
+8 Forty/Hundred/FourHundred Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+33554432K bytes of physical memory.
+11161600K bytes of Bootflash at bootflash:.
+1638400K bytes of Crash Files at crashinfo:.
+234430023K bytes of SATA hard disk at disk0:.
+
+Base Ethernet MAC Address          : 6c:b2:ae:4a:4f:c0
+Motherboard Assembly Number        : 4DB9
+Motherboard Serial Number          : FXS223805XS
+Model Revision Number              : V02
+Motherboard Revision Number        : 6
+Model Number                       : C9606R
+System Serial Number               : FXS2241Q04W
+
+Switch#
+
+2022-07-18 16:24:57,299: %UNICON-INFO: +++ Metaluna with via 'a': configure +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#no logging console
+Switch(config)#line console 0
+Switch(config-line)#exec-timeout 0
+Switch(config-line)#end
+Switch#
+
+2022-07-18 16:25:01,237: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 2022-07-18_08.29_kavelmur
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_IOSXE), Experimental Version 17.10.20220714:183343 [BLD_POLARIS_DEV_S2C_20220701_023637-4-g92ae75815d4e-dirty:/nobackup/kavelmur/histogram 104]
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Fri 15-Jul-22 00:03 by kavelmur
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2022 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.7.1DEV, DEVELOPMENT SOFTWARE
+Switch uptime is 7 hours, 35 minutes
+Uptime for this control processor is 7 hours, 39 minutes
+System returned to ROM by reload command issued
+System image file is "tftp://202.153.144.25//auto/tftp-blr-users4/kavelmur/new_eye.bin"
+Last reload reason: reload command issued
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+None                	Subscription Smart License    	 None                          
+AIR License Level: AIR DNA Advantage
+Next reload AIR license Level: AIR DNA Advantage
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9606R (X86) processor (revision V00) with 6030377K/6147K bytes of memory.
+Processor board ID FXS2241Q04W
+2 Virtual Ethernet interface
+60 Forty/Hundred Gigabit Ethernet interfaces
+80 Ten/TwentyFive/Fifty Gigabit Ethernet interfaces
+4 Forty/Hundred/TwoHundred Gigabit Ethernet interfaces
+8 Forty/Hundred/FourHundred Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+33554432K bytes of physical memory.
+11161600K bytes of Bootflash at bootflash:.
+1638400K bytes of Crash Files at crashinfo:.
+234430023K bytes of SATA hard disk at disk0:.
+
+Base Ethernet MAC Address          : 6c:b2:ae:4a:4f:c0
+Motherboard Assembly Number        : 4DB9
+Motherboard Serial Number          : FXS223805XS
+Model Revision Number              : V02
+Motherboard Revision Number        : 6
+Model Number                       : C9606R
+System Serial Number               : FXS2241Q04W
+
+Switch#
+
+2022-07-18 16:25:05,336: %UNICON-INFO: +++ Metaluna with via 'a': executing command 'verify /md5 tftp://202.153.144.25//auto/tftp-blr-users4/kavelmur/new_eye.bin' +++
+verify /md5 tftp://202.153.144.25//auto/tftp-blr-users4/kavelmur/new_eye.bin
+Loading /auto/tftp-blr-users4/kavelmur/new_eye.bin from 202.153.144.25 (via GigabitEthernet0/0): !..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!..............................................................!...............................................................!....................................
+[OK - 1263980084 bytes]
+.Done!
+verify /md5 (tftp://202.153.144.25//auto/tftp-blr-users4/kavelmur/new_eye.bin) = b0a0f03e97fc9c1d529666b72f2d0738
+
+
+Switch#
+2022-07-18T16:26:40: %GENIE-INFO: Post-job: Metaluna image: tftp://202.153.144.25//auto/tftp-blr-users4/kavelmur/new_eye.bin hash: b0a0f03e97fc9c1d529666b72f2d0738
+2022-07-18T16:26:51: %LOG-INFO: <<<< End child log /ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/runinfo/sample2.2022Jul18_16:24:24.500791/JobLog.sample2:pid-710888
+2022-07-18T16:26:51: %GENIE-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:51: %GENIE-INFO: |                     Ending Device Image MD5 Hash Plugin                      |
+2022-07-18T16:26:51: %GENIE-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:51: %CONTRIB-INFO: WebEx Token not given as argument or in config. No WebEx notification will be sent
+2022-07-18T16:26:51: %EASYPY-INFO: --------------------------------------------------------------------------------
+2022-07-18T16:26:51: %EASYPY-INFO: Job finished. Wrapping up...
+2022-07-18T16:26:52: %EASYPY-INFO: Creating archive file: /ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/archive/22-07/sample2.2022Jul18_16:24:24.500791.zip
+2022-07-18T16:26:52: %EASYPY-INFO: Uploading logs to TRADe...
+2022-07-18T16:26:53: %CISCO-INFO: Start Telemetry - Archive Log Upload
+2022-07-18T16:26:54: %CISCO-INFO: Posted data to Kafka returning status code 200 within time 0:00:00.622546
+2022-07-18T16:26:54: %EASYPY-INFO: Log Archive uploaded to: https://ngdevx.cisco.com/services/taas/results/3273dc16-0ef6-4868-a038-1d13bcbb2641
+2022-07-18T16:26:56: %EASYPY-INFO: TRADe upload completed.
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: |                                   TaaS URL                                   |
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: TaaS Log Viewer
+2022-07-18T16:26:56: %EASYPY-INFO: -------------
+2022-07-18T16:26:56: %EASYPY-INFO:     https://ngdevx.cisco.com/services/taas/results/3273dc16-0ef6-4868-a038-1d13bcbb2641
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: |                                  TRADe URL                                   |
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: Result Viewer
+2022-07-18T16:26:56: %EASYPY-INFO: -------------
+2022-07-18T16:26:56: %EASYPY-INFO:     https://earms-trade.cisco.com/tradeui/logs/details?archive=/ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/archive/22-07/sample2.2022Jul18_16:24:24.500791.zip&atstype=ATS
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: |                                Easypy Report                                 |
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: pyATS Instance   : /ws/srmk-bgl/pyats/pyats_20_5
+2022-07-18T16:26:56: %EASYPY-INFO: Python Version   : cpython-3.8.2 (64bit)
+2022-07-18T16:26:56: %EASYPY-INFO: CLI Arguments    : /ws/srmk-bgl/pyats/pyats_20_5/bin/easypy sample2.job -testbed_file sample2.yaml
+2022-07-18T16:26:56: %EASYPY-INFO: User             : gurpres5
+2022-07-18T16:26:56: %EASYPY-INFO: Host Server      : bgl-ads-1947
+2022-07-18T16:26:56: %EASYPY-INFO: Host OS Version  : Red Hat Enterprise Linux 8.5 Ootpa (x86_64)
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: Job Information
+2022-07-18T16:26:56: %EASYPY-INFO:     Name         : sample2
+2022-07-18T16:26:56: %EASYPY-INFO:     Start time   : 2022-07-18 16:24:28.372208+05:30
+2022-07-18T16:26:56: %EASYPY-INFO:     Stop time    : 2022-07-18 16:24:49.712671+05:30
+2022-07-18T16:26:56: %EASYPY-INFO:     Elapsed time : 21.340463
+2022-07-18T16:26:56: %EASYPY-INFO:     Archive      : /ws/srmk-bgl/pyats/pyats_20_5/users/gurpres5/archive/22-07/sample2.2022Jul18_16:24:24.500791.zip
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: Total Tasks    : 1 
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: Overall Stats
+2022-07-18T16:26:56: %EASYPY-INFO:     Passed     : 3
+2022-07-18T16:26:56: %EASYPY-INFO:     Passx      : 0
+2022-07-18T16:26:56: %EASYPY-INFO:     Failed     : 0
+2022-07-18T16:26:56: %EASYPY-INFO:     Aborted    : 0
+2022-07-18T16:26:56: %EASYPY-INFO:     Blocked    : 0
+2022-07-18T16:26:56: %EASYPY-INFO:     Skipped    : 0
+2022-07-18T16:26:56: %EASYPY-INFO:     Errored    : 0
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO:     TOTAL      : 3
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: Success Rate   : 100.00 %
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: |                             Task Result Summary                              |
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: Task-1: sample2.common_setup                                              PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: Task-1: sample2.TC1                                                       PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: Task-1: sample2.common_cleanup                                            PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: 
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: |                             Task Result Details                              |
+2022-07-18T16:26:56: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2022-07-18T16:26:56: %EASYPY-INFO: Task-1: sample2
+2022-07-18T16:26:56: %EASYPY-INFO: |-- common_setup                                                          PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: |   |-- connect                                                           PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: |   `-- verify_inputs                                                     PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: |-- TC1                                                                   PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: |   |-- tc1_setup                                                         PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: |   `-- tc1_step1                                                         PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: `-- common_cleanup                                                        PASSED
+2022-07-18T16:26:56: %EASYPY-INFO: Sending report email...
+2022-07-18T16:26:58: %EASYPY-INFO: Done!
+
+Pro Tip
+-------
+   Try the following command to view your logs:
+       pyats logs view
+
